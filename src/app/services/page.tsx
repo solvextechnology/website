@@ -96,15 +96,8 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => {
-            const CardWrapper = service.slug ? Link : "div";
-            const wrapperProps = service.slug ? { href: `/services/${service.slug}` } : {};
-
-            return (
-              <CardWrapper
-                key={idx}
-                {...wrapperProps}
-                className="glass-card p-8 rounded-3xl border border-card-border hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1 block"
-              >
+            const cardContent = (
+              <>
                 <div className={`mb-6 p-4 rounded-2xl ${service.color} inline-block group-hover:scale-110 transition-transform`}>
                   {service.icon}
                 </div>
@@ -115,7 +108,30 @@ export default function Services() {
                     View Details <ArrowRight className="w-4 h-4 ml-2" />
                   </div>
                 )}
-              </CardWrapper>
+              </>
+            );
+
+            const className = "glass-card p-8 rounded-3xl border border-card-border hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1 block";
+
+            if (service.slug) {
+              return (
+                <Link
+                  key={idx}
+                  href={`/services/${service.slug}`}
+                  className={className}
+                >
+                  {cardContent}
+                </Link>
+              );
+            }
+
+            return (
+              <div
+                key={idx}
+                className={className}
+              >
+                {cardContent}
+              </div>
             );
           })}
         </div>
