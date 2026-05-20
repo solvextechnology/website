@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Rocket, BookOpen, Zap, TrendingUp, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -49,6 +50,23 @@ export default function Solutions() {
             Comprehensive end-to-end solutions to launch, scale, and transform your business in the digital era.
           </motion.p>
         </div>
+
+        {/* Hero Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.8 }}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden glass-card p-2 mb-16 border border-card-border"
+        >
+          <div className="relative w-full h-full rounded-2xl overflow-hidden">
+            <Image 
+              src="/images/intro_growth.png" 
+              alt="Business Solutions and Growth" 
+              fill 
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+          </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {solutions.map((s, i) => (

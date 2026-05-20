@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 
 const projects = [
@@ -9,42 +10,42 @@ const projects = [
     category: "Crypto & Blockchain",
     desc: "A fully automated Bitcoin reward distribution platform with real-time analytics and user dashboard.",
     tags: ["React", "Node.js", "Blockchain"],
-    color: "from-yellow-500/20 to-orange-500/10",
+    image: "/images/crypto_portfolio.png",
   },
   {
     title: "E-Commerce Store",
     category: "Web Development",
     desc: "A high-converting e-commerce platform with custom payment gateway, inventory management, and mobile-first design.",
     tags: ["Next.js", "MongoDB", "Stripe"],
-    color: "from-primary/20 to-secondary/10",
+    image: "/images/ecommerce_portfolio.png",
   },
   {
     title: "Business Management SaaS",
     category: "Software Solution",
     desc: "A comprehensive SaaS platform for managing teams, projects, invoices, and client relationships.",
     tags: ["React", "Firebase", "Node.js"],
-    color: "from-secondary/20 to-accent/10",
+    image: "/images/saas_portfolio.png",
   },
   {
     title: "Online Earning Platform",
     category: "Digital Platform",
     desc: "An affiliate and referral-based online earning platform with multi-tier commission and withdrawal system.",
     tags: ["Next.js", "PostgreSQL", "Redis"],
-    color: "from-accent/20 to-primary/10",
+    image: "/images/earning_portfolio.png",
   },
   {
     title: "Brand Identity — TechStartup",
     category: "Branding",
     desc: "Complete brand redesign including logo, color palette, typography, and social media kit for a growing tech startup.",
     tags: ["Branding", "Figma", "Design"],
-    color: "from-pink-500/20 to-purple-500/10",
+    image: "/images/branding_portfolio.png",
   },
   {
     title: "Mobile App — Delivery Service",
     category: "App Development",
     desc: "Cross-platform delivery tracking app with real-time GPS, push notifications, and driver management panel.",
     tags: ["React Native", "Maps API", "Firebase"],
-    color: "from-green-500/20 to-teal-500/10",
+    image: "/images/mobile_portfolio.png",
   },
 ];
 
@@ -75,8 +76,16 @@ export default function Portfolio() {
               viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               className="glass-card rounded-3xl overflow-hidden border border-card-border hover:border-primary/50 transition-colors group"
             >
-              <div className={`h-36 bg-gradient-to-br ${project.color} flex items-center justify-center`}>
-                <span className="text-xs font-bold uppercase tracking-widest text-foreground/60 bg-background/40 px-3 py-1 rounded-full">{project.category}</span>
+              <div className="h-48 relative flex items-center justify-center overflow-hidden">
+                <Image 
+                  src={project.image} 
+                  alt={project.title} 
+                  fill 
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-background/30 group-hover:bg-transparent transition-colors duration-500"></div>
+                <span className="relative z-10 text-xs font-bold uppercase tracking-widest text-foreground bg-background/70 backdrop-blur-md px-3 py-1 rounded-full">{project.category}</span>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Code, Smartphone, Briefcase, TrendingUp, Zap, Server, CheckCircle2 } from "lucide-react";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
@@ -106,17 +107,13 @@ export default function Home() {
               className="relative h-[500px] w-full rounded-3xl overflow-hidden glass-card p-2"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-secondary/10 to-transparent rounded-3xl" />
-              {/* Abstract decorative element representing technology */}
-              <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center relative overflow-hidden border border-card-border">
-                <div className="absolute w-[500px] h-[500px] bg-primary/30 rounded-full blur-[100px] -top-20 -right-20"></div>
-                <div className="absolute w-[300px] h-[300px] bg-secondary/30 rounded-full blur-[80px] bottom-0 left-0"></div>
-                <div className="z-10 text-center space-y-4">
-                  <div className="w-24 h-24 mx-auto glass-card rounded-2xl flex items-center justify-center border border-primary/30 shadow-[0_0_30px_var(--primary-glow)]">
-                    <Zap className="w-12 h-12 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">Accelerate Growth</h3>
-                </div>
-              </div>
+              <Image 
+                src="/images/intro_growth.png" 
+                alt="Accelerating Business Growth" 
+                fill 
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-700 hover:scale-105" 
+              />
             </motion.div>
           </div>
         </div>
@@ -171,9 +168,9 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "BTC Reward Platform", cat: "Crypto", color: "from-yellow-500/20 to-orange-500/10" },
-              { title: "E-Commerce Store", cat: "Web Development", color: "from-primary/20 to-secondary/10" },
-              { title: "Business SaaS", cat: "Software", color: "from-secondary/20 to-accent/10" },
+              { title: "BTC Reward Platform", cat: "Crypto", image: "/images/crypto_portfolio.png" },
+              { title: "E-Commerce Store", cat: "Web Development", image: "/images/ecommerce_portfolio.png" },
+              { title: "Business SaaS", cat: "Software", image: "/images/saas_portfolio.png" },
             ].map((p, i) => (
               <motion.div
                 key={i}
@@ -183,7 +180,16 @@ export default function Home() {
                 transition={{ delay: i * 0.1 }}
                 className="glass-card rounded-3xl overflow-hidden border border-card-border hover:border-primary/50 transition-colors group"
               >
-                <div className={`h-40 bg-gradient-to-br ${p.color}`} />
+                <div className="h-48 relative">
+                  <Image 
+                    src={p.image} 
+                    alt={p.title} 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
                 <div className="p-6">
                   <span className="text-xs font-semibold text-primary uppercase tracking-widest">{p.cat}</span>
                   <h3 className="text-xl font-bold mt-1 mb-3">{p.title}</h3>

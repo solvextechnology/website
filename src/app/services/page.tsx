@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Code, Smartphone, Briefcase, Server, TrendingUp, Paintbrush, Bitcoin, Zap, Lightbulb, RefreshCw, ArrowRight } from "lucide-react";
 
 const services = [
@@ -89,9 +90,23 @@ export default function Services() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Our <span className="text-gradient">Services</span>
           </h1>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/70 max-w-3xl mx-auto mb-16">
             End-to-end digital solutions designed to launch, scale, and automate your business in the modern digital world.
           </p>
+
+          {/* Hero Image */}
+          <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden glass-card p-2 mb-20 border border-card-border">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden">
+              <Image 
+                src="/images/services_hero.png" 
+                alt="Digital Services Overview" 
+                fill 
+                sizes="(max-width: 1280px) 100vw, 1280px"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

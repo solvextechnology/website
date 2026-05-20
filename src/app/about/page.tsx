@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Target, Eye, CheckCircle2, Users, Award, Globe } from "lucide-react";
 
 const stats = [
@@ -41,6 +42,23 @@ export default function About() {
             We are a team of passionate developers, designers, and strategists dedicated to delivering complete digital growth services for businesses and startups worldwide.
           </motion.p>
         </div>
+
+        {/* Hero Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.8 }}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden glass-card p-2 mb-20 border border-card-border"
+        >
+          <div className="relative w-full h-full rounded-2xl overflow-hidden">
+            <Image 
+              src="/images/about_team.png" 
+              alt="Solvex Technology Team Environment" 
+              fill 
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+          </div>
+        </motion.div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">

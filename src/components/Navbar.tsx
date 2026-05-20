@@ -2,14 +2,12 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
-import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
@@ -45,16 +43,6 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {mounted && (
-              <button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="p-2 rounded-full glass-card border border-card-border hover:border-primary/50 transition-colors"
-                aria-label="Toggle theme"
-              >
-                {theme === "dark" ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-primary" />}
-              </button>
-            )}
-
             <Link
               href="/contact"
               className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full font-medium transition-all duration-300 shadow-[0_0_15px_var(--primary-glow)] hover:shadow-[0_0_25px_var(--primary-glow)]"
@@ -64,15 +52,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3 md:hidden">
-            {mounted && (
-              <button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="p-2 rounded-full glass-card border border-card-border"
-                aria-label="Toggle theme"
-              >
-                {theme === "dark" ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-primary" />}
-              </button>
-            )}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary focus:outline-none"

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { notFound } from "next/navigation";
 
@@ -9,7 +10,7 @@ const services: Record<string, {
   description: string;
   features: string[];
   benefits: string[];
-  color: string;
+  image: string;
 }> = {
   "web-development": {
     title: "Website Development",
@@ -17,7 +18,7 @@ const services: Record<string, {
     description: "We build custom, responsive, and high-performance websites using modern technologies like React, Next.js, and Node.js. From corporate landing pages to full-scale e-commerce platforms — we craft every pixel with precision.",
     features: ["Custom UI/UX Design", "Mobile-First Responsive Layout", "SEO Optimized Structure", "Fast Loading Speed (Core Web Vitals)", "CMS Integration (WordPress/Headless)", "E-Commerce & Payment Gateway"],
     benefits: ["Increased online visibility", "Higher conversion rates", "Professional brand impression", "Scalable architecture for growth"],
-    color: "from-primary/20 to-secondary/10",
+    image: "/images/blog_webapp.png",
   },
   "mobile-app": {
     title: "Mobile App Development",
@@ -25,7 +26,7 @@ const services: Record<string, {
     description: "We design and develop native iOS and Android apps as well as cross-platform solutions using React Native and Flutter. Our apps are fast, beautiful, and built for real users.",
     features: ["iOS & Android Development", "React Native / Flutter", "Push Notifications", "Offline Support", "Real-time Features", "App Store Deployment"],
     benefits: ["Reach customers on mobile", "Enhanced user engagement", "Faster business processes", "Competitive market advantage"],
-    color: "from-secondary/20 to-accent/10",
+    image: "/images/mobile_portfolio.png",
   },
   "business-solutions": {
     title: "Business Management Solutions",
@@ -33,7 +34,7 @@ const services: Record<string, {
     description: "We build custom business management systems — ERP, CRM, project management, invoicing, and HR tools — tailored precisely to your operational needs. Eliminate inefficiencies and gain full visibility into your business.",
     features: ["Custom ERP Development", "CRM Systems", "HR & Payroll Modules", "Inventory Management", "Reporting & Analytics", "Role-Based Access Control"],
     benefits: ["Streamlined operations", "Reduced manual errors", "Better team collaboration", "Data-driven decision making"],
-    color: "from-accent/20 to-primary/10",
+    image: "/images/saas_portfolio.png",
   },
   "business-consultancy": {
     title: "Business Consultancy",
@@ -41,7 +42,7 @@ const services: Record<string, {
     description: "Our experienced business consultants help you navigate challenges, identify opportunities, and create actionable growth strategies. Whether you're a startup or an established enterprise, we guide you to smarter decisions.",
     features: ["Market Research & Analysis", "Business Model Design", "Competitive Analysis", "Revenue Model Optimization", "Risk Assessment", "Digital Strategy Planning"],
     benefits: ["Informed business decisions", "Reduced operational risk", "Faster time to market", "Sustainable growth strategy"],
-    color: "from-primary/20 to-accent/10",
+    image: "/images/consultancy_service.png",
   },
   "growth-strategy": {
     title: "Business Growth Strategy",
@@ -49,7 +50,7 @@ const services: Record<string, {
     description: "We develop comprehensive, data-driven growth strategies to help you acquire more customers, increase conversions, and maximize revenue. From SEO to performance marketing — we cover the full growth funnel.",
     features: ["SEO & Content Strategy", "Paid Advertising (Google/Meta)", "Conversion Rate Optimization", "Email Marketing Funnels", "Social Media Growth", "Analytics & Reporting"],
     benefits: ["More qualified leads", "Higher ROI on marketing spend", "Improved customer retention", "Measurable, trackable results"],
-    color: "from-secondary/20 to-primary/10",
+    image: "/images/growth_service.png",
   },
   "digital-automation": {
     title: "Digital Business Automation",
@@ -57,7 +58,7 @@ const services: Record<string, {
     description: "Automate repetitive tasks, complex workflows, and business processes using custom APIs, AI integrations, and no-code/low-code platforms. Save time and scale faster without increasing headcount.",
     features: ["Workflow Automation", "API Integration & Development", "AI-Powered Tools", "CRM & Email Automation", "Data Sync & Migration", "Custom Bot Development"],
     benefits: ["Save 20+ hours per week", "Eliminate human errors", "Scale without extra staff", "Faster customer response times"],
-    color: "from-accent/20 to-secondary/10",
+    image: "/images/blog_automation.png",
   },
   "custom-software": {
     title: "Custom Software Solutions",
@@ -65,7 +66,7 @@ const services: Record<string, {
     description: "When off-the-shelf software doesn't cut it, we build exactly what you need. From SaaS platforms to internal enterprise tools — our engineers design and develop robust, scalable software from the ground up.",
     features: ["Full-Stack Development", "Cloud Architecture (AWS/GCP)", "Microservices & APIs", "Database Design", "Security & Compliance", "DevOps & CI/CD Pipeline"],
     benefits: ["Exact fit for your needs", "No recurring license fees", "Full ownership of code", "Built to scale with you"],
-    color: "from-primary/20 to-secondary/10",
+    image: "/images/intro_growth.png",
   },
 };
 
@@ -94,10 +95,20 @@ export default async function ServiceDetail({ params }: { params: Promise<Params
     <div className="min-h-screen pt-32 pb-20 bg-background">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className={`h-48 rounded-3xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-12`}>
-          <div className="text-center">
-            <p className="text-foreground/60 text-sm font-semibold uppercase tracking-widest mb-2">Service</p>
-            <h1 className="text-4xl md:text-5xl font-extrabold">{service.title}</h1>
+        <div className="relative h-64 md:h-80 rounded-3xl overflow-hidden glass-card p-2 mb-12 border border-card-border">
+          <div className="relative w-full h-full rounded-2xl overflow-hidden flex items-center justify-center">
+            <Image 
+              src={service.image} 
+              alt={service.title} 
+              fill 
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-cover" 
+            />
+            <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
+            <div className="relative z-10 text-center px-4">
+              <p className="text-foreground text-sm font-bold uppercase tracking-widest mb-3 bg-background/50 inline-block px-4 py-1 rounded-full backdrop-blur-md border border-card-border/50">Service</p>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-foreground drop-shadow-xl">{service.title}</h1>
+            </div>
           </div>
         </div>
 
