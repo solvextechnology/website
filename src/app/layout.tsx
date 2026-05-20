@@ -9,6 +9,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import BackToTop from "@/components/BackToTop";
 import CookieBanner from "@/components/CookieBanner";
 import JsonLd from "@/components/JsonLd";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -73,6 +74,7 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/30`}>
         <JsonLd />
         <GoogleAnalytics />
+        <SpeedInsights />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="relative flex min-h-screen flex-col">
             <Navbar />
