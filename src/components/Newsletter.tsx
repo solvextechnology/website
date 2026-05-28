@@ -9,10 +9,14 @@ export default function Newsletter() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      setEmail("");
-    }
+    if (!email) return;
+
+    const subject = encodeURIComponent("Newsletter subscription request");
+    const body = encodeURIComponent(`Please add this email to the newsletter list: ${email}`);
+
+    window.location.href = `mailto:support@solvextechnology.in?subject=${subject}&body=${body}`;
+    setSubmitted(true);
+    setEmail("");
   };
 
   return (
@@ -30,7 +34,7 @@ export default function Newsletter() {
             </p>
             {submitted ? (
               <div className="py-4 px-6 rounded-2xl bg-primary/10 border border-primary/30 text-primary font-semibold">
-                ✓ Thank you! You&apos;re now subscribed.
+                Thanks. Your email app has opened with the subscription request.
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

@@ -15,12 +15,12 @@ export default function Home() {
   };
 
   const services = [
-    { icon: <Code className="w-8 h-8 text-primary" />, title: "Web Development", desc: "Custom, responsive websites built with modern technologies like React, Next.js, and Node." },
-    { icon: <Smartphone className="w-8 h-8 text-secondary" />, title: "Mobile Apps", desc: "Native and cross-platform mobile applications that provide seamless user experiences." },
-    { icon: <Briefcase className="w-8 h-8 text-accent" />, title: "Business Solutions", desc: "Complete digital transformation strategies and management solutions for scaling businesses." },
-    { icon: <TrendingUp className="w-8 h-8 text-primary" />, title: "Growth Strategy", desc: "Data-driven marketing and branding strategies to accelerate your online growth." },
-    { icon: <Zap className="w-8 h-8 text-secondary" />, title: "Digital Automation", desc: "Streamline operations with custom workflow automation and AI integrations." },
-    { icon: <Server className="w-8 h-8 text-accent" />, title: "Custom Software", desc: "Scalable, secure, and robust custom software architectures for complex needs." },
+    { icon: <Code className="w-8 h-8 text-primary" />, title: "Web Development", desc: "Custom, responsive websites built with modern technologies like React, Next.js, and Node.", href: "/services/web-development" },
+    { icon: <Smartphone className="w-8 h-8 text-secondary" />, title: "Mobile Apps", desc: "Native and cross-platform mobile applications that provide seamless user experiences.", href: "/services/mobile-app" },
+    { icon: <Briefcase className="w-8 h-8 text-accent" />, title: "Business Solutions", desc: "Complete digital transformation strategies and management solutions for scaling businesses.", href: "/services/business-solutions" },
+    { icon: <TrendingUp className="w-8 h-8 text-primary" />, title: "Growth Strategy", desc: "Data-driven marketing and branding strategies to accelerate your online growth.", href: "/services/growth-strategy" },
+    { icon: <Zap className="w-8 h-8 text-secondary" />, title: "Digital Automation", desc: "Streamline operations with custom workflow automation and AI integrations.", href: "/services/digital-automation" },
+    { icon: <Server className="w-8 h-8 text-accent" />, title: "Custom Software", desc: "Scalable, secure, and robust custom software architectures for complex needs.", href: "/services/custom-software" },
   ];
 
   return (
@@ -135,18 +135,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glass-card p-8 rounded-3xl hover:border-primary/50 transition-colors group cursor-pointer"
               >
-                <div className="mb-6 p-4 rounded-2xl bg-background inline-block shadow-sm group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-foreground/70 leading-relaxed mb-6">
-                  {service.desc}
-                </p>
-                <div className="flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform">
-                  Learn more <ArrowRight className="w-4 h-4 ml-2" />
-                </div>
+                <Link href={service.href} className="glass-card p-8 rounded-3xl hover:border-primary/50 transition-colors group block h-full">
+                  <div className="mb-6 p-4 rounded-2xl bg-background inline-block shadow-sm group-hover:scale-110 transition-transform">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-6">
+                    {service.desc}
+                  </p>
+                  <div className="flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform">
+                    Learn more <ArrowRight className="w-4 h-4 ml-2" />
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>

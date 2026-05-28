@@ -1,14 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
-    if (!consent) setVisible(true);
+    const timer = window.setTimeout(() => {
+      const consent = localStorage.getItem("cookie-consent");
+      if (!consent) setVisible(true);
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   const accept = () => {
@@ -27,7 +31,7 @@ export default function CookieBanner() {
     <div className="fixed bottom-0 left-0 right-0 z-[100] p-4 md:p-6">
       <div className="max-w-4xl mx-auto glass-card border border-card-border rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-2xl">
         <div className="flex-1 text-sm text-foreground/80">
-          🍪 We use cookies to enhance your experience on our website. By continuing to browse, you agree to our{" "}
+          We use cookies to enhance your experience on our website. By continuing to browse, you agree to our{" "}
           <Link href="/legal/cookies" className="text-primary hover:underline">Cookie Policy</Link>.
         </div>
         <div className="flex gap-3 shrink-0">

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -23,12 +23,16 @@ export default function Contact() {
         body: JSON.stringify(form),
       });
       if (res.ok) {
+        const data = await res.json();
+        if (typeof data.mailto === "string") {
+          window.location.href = data.mailto;
+        }
         setStatus("sent");
         setForm({ name: "", email: "", message: "" });
       } else {
         setStatus("error");
       }
-    } catch (err) {
+    } catch {
       setStatus("error");
     }
   };
@@ -56,11 +60,12 @@ export default function Contact() {
           </motion.p>
         </div>
 
-        <motion.div 
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr]">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="glass-card p-10 rounded-3xl"
+          className="glass-card p-8 md:p-10 rounded-3xl"
         >
           <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
           <div className="space-y-8">
@@ -109,6 +114,78 @@ export default function Contact() {
             </div>
           </div>
         </motion.div>
+
+        <motion.form
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25 }}
+          className="glass-card p-8 md:p-10 rounded-3xl border border-card-border space-y-5"
+        >
+          <div>
+            <h2 className="text-2xl font-bold mb-2">Send a Message</h2>
+            <p className="text-foreground/70">Share your project details and we will reply as soon as possible.</p>
+          </div>
+
+          <label className="block">
+            <span className="block text-sm font-semibold text-foreground/80 mb-2">Name</span>
+            <input
+              name="name"
+              type="text"
+              required
+              value={form.name}
+              onChange={handleChange}
+              className="w-full rounded-2xl border border-card-border bg-background px-4 py-3 outline-none transition-colors focus:border-primary"
+              placeholder="Your name"
+            />
+          </label>
+
+          <label className="block">
+            <span className="block text-sm font-semibold text-foreground/80 mb-2">Email</span>
+            <input
+              name="email"
+              type="email"
+              required
+              value={form.email}
+              onChange={handleChange}
+              className="w-full rounded-2xl border border-card-border bg-background px-4 py-3 outline-none transition-colors focus:border-primary"
+              placeholder="you@example.com"
+            />
+          </label>
+
+          <label className="block">
+            <span className="block text-sm font-semibold text-foreground/80 mb-2">Message</span>
+            <textarea
+              name="message"
+              required
+              rows={6}
+              value={form.message}
+              onChange={handleChange}
+              className="w-full resize-none rounded-2xl border border-card-border bg-background px-4 py-3 outline-none transition-colors focus:border-primary"
+              placeholder="Tell us about your project"
+            />
+          </label>
+
+          <button
+            type="submit"
+            disabled={status === "sending"}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 font-bold text-white shadow-[0_0_20px_var(--primary-glow)] transition-colors hover:bg-primary/90 disabled:cursor-wait disabled:opacity-70"
+          >
+            {status === "sending" ? "Preparing..." : "Send Message"} <Send className="w-5 h-5" />
+          </button>
+
+          {status === "sent" && (
+            <p className="rounded-2xl border border-primary/30 bg-primary/10 px-4 py-3 text-sm font-medium text-primary">
+              Your email app has opened with the message. Please send it from there to complete the enquiry.
+            </p>
+          )}
+          {status === "error" && (
+            <p className="rounded-2xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm font-medium text-red-500">
+              Something went wrong. Please email us directly at support@solvextechnology.in.
+            </p>
+          )}
+        </motion.form>
+        </div>
 
         {/* Google Maps */}
         <motion.div

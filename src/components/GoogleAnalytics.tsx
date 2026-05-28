@@ -1,10 +1,9 @@
 import Script from "next/script";
 
-// Replace G-XXXXXXXXXX with your actual GA4 Measurement ID
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export default function GoogleAnalytics() {
-  if (process.env.NODE_ENV !== "production") return null;
+  if (process.env.NODE_ENV !== "production" || !GA_MEASUREMENT_ID) return null;
 
   return (
     <>

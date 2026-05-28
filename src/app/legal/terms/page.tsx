@@ -15,7 +15,7 @@ export default function Terms() {
           <section className="space-y-3">
             <h2 className="text-2xl font-bold text-foreground">1. Agreement to Terms</h2>
             <p className="text-foreground/70 leading-relaxed">
-              By accessing our website and utilizing the services provided by Solvex Technology ("we", "us", "our"), you ("Client", "User") agree to be bound by these Terms of Service. If you disagree with any part of these terms, please do not use our services.
+              By accessing our website and utilizing the services provided by Solvex Technology (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), you (&quot;Client&quot;, &quot;User&quot;) agree to be bound by these Terms of Service. If you disagree with any part of these terms, please do not use our services.
             </p>
           </section>
 
