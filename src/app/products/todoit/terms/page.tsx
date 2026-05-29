@@ -99,7 +99,7 @@ export default function ToDoItTerms() {
                     <tr>
                       <td className="p-4 align-top font-medium">Voice Input Task Creation</td>
                       <td className="p-4 align-top">
-                        Integrates offline Speech-to-Text. You can tap the mic button to speak a command (e.g., &quot;Buy milk tomorrow at 10 am&quot;), which automatically fills out the task dashboard locally. Users must grant the <code className="text-xs text-blue-400">RECORD_AUDIO</code> permission to use this feature.
+                        Allows transcribing spoken voice directly into the task title input field. Users must grant the <code className="text-xs text-blue-400">RECORD_AUDIO</code> permission to utilize this hands-free dictation feature.
                       </td>
                     </tr>
                     <tr>
@@ -173,7 +173,7 @@ export default function ToDoItTerms() {
               <ul className="list-disc pl-6 space-y-2 text-sm text-foreground/70">
                 <li><strong>Exchange Rate:</strong> Our in-game conversion matrix standardizes 1,000 points as equivalent to $1.00 USD (or local promotional equivalent).</li>
                 <li><strong>Minimum Threshold:</strong> Users must accumulate at least <strong>1,000 points</strong> in their account before submitting a redemption request.</li>
-                <li><strong>Activity Check:</strong> In order to maintain eligibility for redemptions, users must have an active streak of at least <strong>7 consecutive days</strong> inside the app.</li>
+                <li><strong>Activity Check:</strong> In order to maintain eligibility for redemptions, users must have completed at least <strong>50 total tasks</strong> inside the app.</li>
                 <li><strong>Processing:</strong> Redemption requests are manually processed within <strong>48 to 72 hours</strong>. Approved redemptions are fulfilled as promotional goodwill gift cards at our sole discretion.</li>
                 <li><strong>No Guaranteed Payouts:</strong> We reserve the right to review, delay, deny, or cancel point conversions if we suspect system errors, fraud, automated clicking, or user inactivity.</li>
               </ul>

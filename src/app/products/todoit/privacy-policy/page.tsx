@@ -159,7 +159,7 @@ export default function ToDoItPrivacyPolicy() {
                     <tr>
                       <td className="p-4 align-top font-mono text-xs text-blue-400 font-bold">RECORD_AUDIO</td>
                       <td className="p-4 align-top">
-                        Used exclusively for the <strong>Voice-Input Command System</strong>. The app uses the on-device Speech-to-Text engine to listen to your voice command (e.g., &quot;Gym tomorrow at 9 AM urgent&quot;), automatically extracting the task name, date, time, and priority.
+                        Used exclusively to transcribe your spoken voice directly into the task title input field, allowing you to easily dictate task names hands-free without typing.
                       </td>
                       <td className="p-4 align-top">
                         <span className="text-xs bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-full font-bold">Processed Locally</span><br/>
