@@ -39,6 +39,22 @@ const products = [
     statusStyle: "border-yellow-500/50 text-yellow-400 bg-yellow-500/10",
     statusDot: "bg-yellow-400",
     icon: <Gamepad2 className="w-5 h-5 text-secondary" />
+  },
+  {
+    title: "SSC Railway Exam Guide",
+    category: "EdTech & Preparation",
+    desc: "The ultimate preparation platform for SSC and Railway aspirants. Features 1000+ bilingual questions, mock tests, and AI-driven performance analytics.",
+    link: "/products/ssc-railway",
+    image: "/images/ssc-logo.png",
+    status: "Active Release",
+    features: [
+      { name: "Live Mock Tests", icon: <Gamepad2 className="w-4 h-4 text-secondary" /> },
+      { name: "Multilingual", icon: <BookOpen className="w-4 h-4 text-yellow-500" /> },
+      { name: "Performance AI", icon: <Rocket className="w-4 h-4 text-primary" /> }
+    ],
+    statusStyle: "border-blue-500/50 text-blue-400 bg-blue-500/10",
+    statusDot: "bg-blue-400 animate-pulse",
+    icon: <BookOpen className="w-5 h-5 text-primary" />
   }
 ];
 
