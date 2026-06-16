@@ -58,10 +58,11 @@ export default function DeleteAccount() {
             </p>
             <ol className="list-decimal pl-6 space-y-4 font-medium text-foreground/90">
               <li>Open the Tools Studio app on your Android device.</li>
-              <li>Tap the <strong className="text-white">Profile Avatar / Settings</strong> icon in the top right corner of the Dashboard.</li>
-              <li>Scroll down to the bottom of the Settings page.</li>
-              <li>Tap on the <strong className="text-red-500">"Delete Account"</strong> button.</li>
-              <li>Read the warning prompt carefully, and tap <strong>"Yes, Delete My Account"</strong> to confirm.</li>
+              <li>Tap the <strong className="text-white">Profile Avatar</strong> icon in the top right corner of the Dashboard.</li>
+              <li>Scroll down and tap on <strong className="text-white">Account Management</strong>.</li>
+              <li><strong className="text-emerald-400">Security Step:</strong> Tap <strong>Sign Out</strong>, then sign back into the app. Firebase requires a fresh login to verify your identity before allowing data deletion.</li>
+              <li>Return to Account Management and tap the <strong className="text-red-500">"Delete My Account"</strong> button.</li>
+              <li>Read the warning prompt carefully, and tap <strong className="text-red-500">"Delete"</strong> to confirm.</li>
             </ol>
             <p className="mt-8 text-sm text-foreground/50 border-t border-card-border/50 pt-6">
               If you have already uninstalled the app and wish to delete your data, you must reinstall the app, sign in with the Google account you used, and follow the steps above to authorize the deletion directly from your device.
