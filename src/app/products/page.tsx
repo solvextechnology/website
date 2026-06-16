@@ -7,6 +7,23 @@ import { ExternalLink, Rocket, Gamepad2, CheckCircle2, ShieldCheck, Trash2, Arro
 
 const products = [
   {
+    title: "YouTube Viral Toolkit",
+    category: "AI & Content Creation",
+    desc: "The ultimate offline-first metadata and growth utility for YouTube creators. Features AI-powered title generation, description formatting, tags extraction, and an integrated token economy.",
+    link: "/products/youtube-viral-toolkit",
+    image: "/images/mobile_portfolio.png",
+    status: "Active Release",
+    features: [
+      { name: "Gemini AI", icon: <Rocket className="w-4 h-4 text-primary" /> },
+      { name: "Offline First", icon: <ShieldCheck className="w-4 h-4 text-emerald-500" /> },
+      { name: "Token Wallet", icon: <Zap className="w-4 h-4 text-yellow-500" /> },
+      { name: "Templates", icon: <BookOpen className="w-4 h-4 text-secondary" /> }
+    ],
+    statusStyle: "border-red-500/50 text-red-400 bg-red-500/10",
+    statusDot: "bg-red-400 animate-pulse",
+    icon: <Rocket className="w-5 h-5 text-red-500" />
+  },
+  {
     title: "To Do It",
     category: "Productivity & Gamification",
     desc: "A gamified productivity and task management suite. Plan your tasks, run deep-focus Pomodoro sessions, maintain local financial ledger books, and earn virtual loyalty streaks for staying on track.",
