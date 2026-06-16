@@ -49,46 +49,74 @@ export default function YouTubeViralToolkit() {
         </div>
 
         {/* Features Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          
-          <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
-            <div className="w-12 h-12 rounded-2xl bg-red-500/10 flex items-center justify-center mb-6">
-              <Rocket className="w-6 h-6 text-red-500" />
-            </div>
-            <h3 className="text-2xl font-bold mb-4">Gemini AI Integration</h3>
-            <p className="text-foreground/70 leading-relaxed">
-              Powered by Google Gemini AI, generate viral titles, compelling descriptions, targeted tags, and engaging shorts hooks instantly without ever leaving the app.
-            </p>
+        <div className="mb-16">
+          <h2 className="text-3xl font-extrabold mb-8 text-center">6 AI-Powered Creator Tools</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {[
+              { icon: Rocket, title: "Title Generator", desc: "Craft high-CTR, click-worthy titles optimized for the YouTube algorithm." },
+              { icon: Zap, title: "Shorts Hook", desc: "Generate 3-second hooks that retain viewers instantly for YouTube Shorts." },
+              { icon: BookOpen, title: "SEO Description", desc: "Write comprehensive, keyword-rich descriptions to rank higher in search." },
+              { icon: Star, title: "Hashtag Pack", desc: "Extract and generate trending hashtag clusters for maximum reach." },
+              { icon: Video, title: "Shorts Script", desc: "Write engaging 60-second scripts structured for fast-paced retention." },
+              { icon: ShieldCheck, title: "Tag Optimizer", desc: "Generate SEO metadata tags to help YouTube categorize your video." }
+            ].map((tool, i) => (
+              <div key={i} className="glass-card p-6 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
+                <div className="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+                  <tool.icon className="w-5 h-5 text-red-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{tool.title}</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">{tool.desc}</p>
+              </div>
+            ))}
           </div>
 
-          <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6">
-              <ShieldCheck className="w-6 h-6 text-emerald-500" />
+          <h2 className="text-3xl font-extrabold mb-8 text-center mt-20">Complete Creator Workspace</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6">
+                <ShieldCheck className="w-6 h-6 text-emerald-500" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Offline-First Engine</h3>
+              <p className="text-foreground/70 leading-relaxed mb-4">
+                Your workflow shouldn't depend on a constant internet connection. Generate, save, and manage your metadata drafts seamlessly offline using our local device cache.
+              </p>
+              <ul className="list-disc pl-5 text-sm text-foreground/60 space-y-2">
+                <li>Local SQLite Database Integration</li>
+                <li>Offline Notes & Calendar Planners</li>
+                <li>Saved Items & Project History</li>
+              </ul>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Offline-First Engine</h3>
-            <p className="text-foreground/70 leading-relaxed">
-              Your workflow shouldn't depend on a constant internet connection. Generate, save, and export your metadata drafts seamlessly offline.
-            </p>
-          </div>
 
-          <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
-            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6">
-              <BookOpen className="w-6 h-6 text-blue-500" />
+            <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
+              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6">
+                <BookOpen className="w-6 h-6 text-blue-500" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Community Templates</h3>
+              <p className="text-foreground/70 leading-relaxed mb-4">
+                Access a premium library of community-driven YouTube description templates. Download them natively, like your favorites, and reuse them across your videos.
+              </p>
+              <ul className="list-disc pl-5 text-sm text-foreground/60 space-y-2">
+                <li>Cloud-synced with Supabase Backend</li>
+                <li>Like & Download tracking</li>
+                <li>Publish your own templates for the community</li>
+              </ul>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Community Templates</h3>
-            <p className="text-foreground/70 leading-relaxed">
-              Access a premium library of community-driven YouTube description templates. Download them natively and reuse them across your videos.
-            </p>
-          </div>
 
-          <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300">
-            <div className="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center mb-6">
-              <Zap className="w-6 h-6 text-yellow-500" />
+            <div className="glass-card p-8 rounded-3xl border border-card-border hover:border-red-500/30 transition-all duration-300 md:col-span-2">
+              <div className="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center mb-6">
+                <Zap className="w-6 h-6 text-yellow-500" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Advanced Thumbnail Maker</h3>
+              <p className="text-foreground/70 leading-relaxed mb-4">
+                Design high-conversion thumbnails directly inside the app, and export them natively to your device gallery.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div className="bg-background/50 p-4 rounded-xl text-center"><p className="text-sm font-bold">Custom Text</p></div>
+                <div className="bg-background/50 p-4 rounded-xl text-center"><p className="text-sm font-bold">Rich Stickers</p></div>
+                <div className="bg-background/50 p-4 rounded-xl text-center"><p className="text-sm font-bold">Color Gradients</p></div>
+                <div className="bg-background/50 p-4 rounded-xl text-center"><p className="text-sm font-bold">Image Backgrounds</p></div>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Thumbnail Maker</h3>
-            <p className="text-foreground/70 leading-relaxed">
-              Design high-conversion thumbnails with customizable text, gradients, and shadows directly inside the app, and export them directly to your gallery.
-            </p>
           </div>
         </div>
 
