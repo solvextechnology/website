@@ -11,7 +11,7 @@ export default function DeleteAccount() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Back Button */}
-        <Link href="/products/youtube-viral-toolkit" className="inline-flex items-center gap-2 text-foreground/60 hover:text-red-500 transition-colors mb-12">
+        <Link href="/products/tools-studio" className="inline-flex items-center gap-2 text-foreground/60 hover:text-red-500 transition-colors mb-12">
           <ArrowLeft className="w-4 h-4" /> Back to Product
         </Link>
 
@@ -32,7 +32,7 @@ export default function DeleteAccount() {
           >
             Data Deletion Instructions
           </motion.h1>
-          <p className="text-foreground/60">Learn how to completely remove your account and data from YouTube Viral Toolkit.</p>
+          <p className="text-foreground/60">Learn how to completely remove your account and data from Tools Studio.</p>
         </div>
 
         {/* Warning Banner */}
@@ -54,10 +54,10 @@ export default function DeleteAccount() {
               How to Delete Your Account
             </h2>
             <p className="mb-6">
-              You can initiate a complete account deletion directly from within the YouTube Viral Toolkit mobile app. Follow these simple steps:
+              You can initiate a complete account deletion directly from within the Tools Studio mobile app. Follow these simple steps:
             </p>
             <ol className="list-decimal pl-6 space-y-4 font-medium text-foreground/90">
-              <li>Open the YouTube Viral Toolkit app on your Android device.</li>
+              <li>Open the Tools Studio app on your Android device.</li>
               <li>Tap the <strong className="text-white">Profile Avatar / Settings</strong> icon in the top right corner of the Dashboard.</li>
               <li>Scroll down to the bottom of the Settings page.</li>
               <li>Tap on the <strong className="text-red-500">"Delete Account"</strong> button.</li>

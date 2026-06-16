@@ -11,7 +11,7 @@ export default function Terms() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Back Button */}
-        <Link href="/products/youtube-viral-toolkit" className="inline-flex items-center gap-2 text-foreground/60 hover:text-red-500 transition-colors mb-12">
+        <Link href="/products/tools-studio" className="inline-flex items-center gap-2 text-foreground/60 hover:text-red-500 transition-colors mb-12">
           <ArrowLeft className="w-4 h-4" /> Back to Product
         </Link>
 
@@ -38,7 +38,7 @@ export default function Terms() {
         {/* Content */}
         <div className="prose prose-invert prose-red max-w-none text-foreground/80 space-y-8">
           <p>
-            Welcome to <strong>YouTube Viral Toolkit</strong>. By downloading, installing, or using YouTube Viral Toolkit, you agree to these Terms & Conditions.
+            Welcome to <strong>Tools Studio</strong>. By downloading, installing, or using Tools Studio, you agree to these Terms & Conditions.
           </p>
 
           <section className="glass-card p-8 rounded-3xl border border-card-border">
@@ -48,7 +48,7 @@ export default function Terms() {
 
           <section className="glass-card p-8 rounded-3xl border border-card-border">
             <h2 className="text-2xl font-bold mb-4 text-foreground">2. Service Description</h2>
-            <p>YouTube Viral Toolkit provides creator tools including:</p>
+            <p>Tools Studio provides creator tools including:</p>
             <ul className="list-disc pl-6">
               <li>Title Generation</li>
               <li>Hashtag Generation</li>
@@ -106,7 +106,7 @@ export default function Terms() {
 
           <section className="glass-card p-8 rounded-3xl border border-card-border">
             <h2 className="text-2xl font-bold mb-4 text-foreground">7. No YouTube Affiliation</h2>
-            <p>YouTube Viral Toolkit is an independent application. It is not affiliated with, endorsed by, or sponsored by:</p>
+            <p>Tools Studio is an independent application. It is not affiliated with, endorsed by, or sponsored by:</p>
             <ul className="list-disc pl-6">
               <li><a href="https://www.youtube.com" className="text-red-500 hover:underline">YouTube</a></li>
               <li><a href="https://www.google.com" className="text-red-500 hover:underline">Google</a></li>

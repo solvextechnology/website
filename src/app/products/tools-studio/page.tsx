@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Rocket, ShieldCheck, Zap, BookOpen, Star, Video, PlayCircle } from "lucide-react";
 
-export default function YouTubeViralToolkit() {
+export default function ToolsStudio() {
   return (
     <div className="min-h-screen pt-32 pb-24 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500/10 via-background to-background relative overflow-hidden">
       
@@ -35,7 +35,7 @@ export default function YouTubeViralToolkit() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight"
           >
-            YouTube <span className="text-red-500">Viral Toolkit</span>
+            Tools <span className="text-red-500">Studio</span>
           </motion.h1>
 
           <motion.p
@@ -157,10 +157,10 @@ export default function YouTubeViralToolkit() {
 
         {/* Legal Links */}
         <div className="flex flex-wrap justify-center gap-6 mt-16 pt-8 border-t border-card-border/50">
-          <Link href="/legal/youtube-viral-toolkit/privacy" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Privacy Policy</Link>
-          <Link href="/legal/youtube-viral-toolkit/terms" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Terms & Conditions</Link>
-          <Link href="/legal/youtube-viral-toolkit/community-guidelines" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Community Guidelines</Link>
-          <Link href="/legal/youtube-viral-toolkit/delete-account" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Delete Account</Link>
+          <Link href="/legal/tools-studio/privacy" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Privacy Policy</Link>
+          <Link href="/legal/tools-studio/terms" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Terms & Conditions</Link>
+          <Link href="/legal/tools-studio/community-guidelines" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Community Guidelines</Link>
+          <Link href="/legal/tools-studio/delete-account" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Delete Account</Link>
         </div>
 
       </div>

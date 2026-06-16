@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Back Button */}
-        <Link href="/products/youtube-viral-toolkit" className="inline-flex items-center gap-2 text-foreground/60 hover:text-red-500 transition-colors mb-12">
+        <Link href="/products/tools-studio" className="inline-flex items-center gap-2 text-foreground/60 hover:text-red-500 transition-colors mb-12">
           <ArrowLeft className="w-4 h-4" /> Back to Product
         </Link>
 
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
         {/* Content */}
         <div className="prose prose-invert prose-red max-w-none text-foreground/80 space-y-8">
           <p>
-            Welcome to <strong>YouTube Viral Toolkit</strong> ("App", "we", "our", "us"), operated by Solvex Technology IN.
+            Welcome to <strong>Tools Studio</strong> ("App", "we", "our", "us"), operated by Solvex Technology IN.
             This Privacy Policy explains how we collect, use, store, and protect your information when you use our mobile application and related services.
           </p>
 

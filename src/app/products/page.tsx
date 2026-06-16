@@ -7,11 +7,11 @@ import { ExternalLink, Rocket, Gamepad2, CheckCircle2, ShieldCheck, Trash2, Arro
 
 const products = [
   {
-    title: "YouTube Viral Toolkit",
+    title: "Tools Studio",
     category: "AI & Content Creation",
     desc: "The ultimate offline-first metadata and growth utility for YouTube creators. Features AI-powered title generation, description formatting, tags extraction, and an integrated token economy.",
-    link: "/products/youtube-viral-toolkit",
-    image: "/images/mobile_portfolio.png",
+    link: "/products/tools-studio",
+    image: "/images/tools-studio-logo.png",
     status: "Active Release",
     features: [
       { name: "Gemini AI", icon: <Rocket className="w-4 h-4 text-primary" /> },
