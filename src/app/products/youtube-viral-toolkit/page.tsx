@@ -131,6 +131,7 @@ export default function YouTubeViralToolkit() {
         <div className="flex flex-wrap justify-center gap-6 mt-16 pt-8 border-t border-card-border/50">
           <Link href="/legal/youtube-viral-toolkit/privacy" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Privacy Policy</Link>
           <Link href="/legal/youtube-viral-toolkit/terms" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Terms & Conditions</Link>
+          <Link href="/legal/youtube-viral-toolkit/community-guidelines" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Community Guidelines</Link>
           <Link href="/legal/youtube-viral-toolkit/delete-account" className="text-sm text-foreground/60 hover:text-red-500 transition-colors">Delete Account</Link>
         </div>
 
