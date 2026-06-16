@@ -32,42 +32,126 @@ export default function Terms() {
           >
             Terms & Conditions
           </motion.h1>
-          <p className="text-foreground/60">Last updated: June 2026</p>
+          <p className="text-foreground/60">Last Updated: June 2026</p>
         </div>
 
         {/* Content */}
         <div className="prose prose-invert prose-red max-w-none text-foreground/80 space-y-8">
+          <p>
+            Welcome to <strong>YouTube Viral Toolkit</strong>. By downloading, installing, or using YouTube Viral Toolkit, you agree to these Terms & Conditions.
+          </p>
+
           <section className="glass-card p-8 rounded-3xl border border-card-border">
             <h2 className="text-2xl font-bold mb-4 text-foreground">1. Acceptance of Terms</h2>
-            <p>
-              By downloading, installing, and using the YouTube Viral Toolkit, you agree to comply with and be bound by these Terms and Conditions. Our generators serve as templates and creative assistance. Actual channel performance and viewership depend on YouTube's algorithmic recommendation matrices, which are outside our control. We do not guarantee "viral" success.
-            </p>
+            <p>By using the App, you agree to comply with these Terms. If you do not agree, do not use the App.</p>
           </section>
 
           <section className="glass-card p-8 rounded-3xl border border-card-border">
-            <h2 className="text-2xl font-bold mb-4 text-foreground">2. Token Economy & Usage</h2>
-            <p>
-              The application operates on an internal Token system. Tokens have no real-world monetary value and cannot be exchanged for fiat currency.
-            </p>
-            <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li><strong>Earning Tokens:</strong> Users can earn 10 tokens by watching rewarded video advertisements.</li>
-              <li><strong>Spending Tokens:</strong> Users can spend 500 tokens to unlock 24-hour access to the Premium Community Templates, or 10,000 tokens for a 1-month Ad-Free Premium experience.</li>
-              <li>Token balances are tied to your authenticated account and are non-transferable.</li>
+            <h2 className="text-2xl font-bold mb-4 text-foreground">2. Service Description</h2>
+            <p>YouTube Viral Toolkit provides creator tools including:</p>
+            <ul className="list-disc pl-6">
+              <li>Title Generation</li>
+              <li>Hashtag Generation</li>
+              <li>Tag Generation</li>
+              <li>SEO Tools</li>
+              <li>Hook Generators</li>
+              <li>Script Generators</li>
+              <li>Template Libraries</li>
+              <li>Community Templates</li>
+              <li>AI Creator Tools</li>
             </ul>
           </section>
 
           <section className="glass-card p-8 rounded-3xl border border-card-border">
-            <h2 className="text-2xl font-bold mb-4 text-foreground">3. Fair Use of AI & Community Guidelines</h2>
-            <p>
-              You agree to use the Gemini AI integration responsibly. You must not use our tools to generate hate speech, explicit content, or spam. When sharing templates to the Community pool, you grant us a non-exclusive, royalty-free license to display and distribute that template to other users. We reserve the right to moderate and delete community templates that violate our policies.
-            </p>
+            <h2 className="text-2xl font-bold mb-4 text-foreground">3. User Responsibilities</h2>
+            <p>Users agree not to:</p>
+            <ul className="list-disc pl-6">
+              <li>Upload illegal content</li>
+              <li>Upload copyrighted content without permission</li>
+              <li>Upload malware or harmful files</li>
+              <li>Abuse the platform</li>
+              <li>Attempt unauthorized access</li>
+              <li>Spam community sections</li>
+            </ul>
           </section>
 
           <section className="glass-card p-8 rounded-3xl border border-card-border">
-            <h2 className="text-2xl font-bold mb-4 text-foreground">4. Copyright & Exported Assets</h2>
-            <p>
-              Title structures, descriptions, and hook templates generated via the app are licensed under royalty-free commercial configurations. You may publish them directly inside monetized YouTube videos. Thumbnails exported from the Thumbnail Maker are your property, provided you have the rights to any base images you import into the editor.
-            </p>
+            <h2 className="text-2xl font-bold mb-4 text-foreground">4. Community Content</h2>
+            <p>Users remain responsible for content they publish. We reserve the right to:</p>
+            <ul className="list-disc pl-6">
+              <li>Remove content</li>
+              <li>Suspend accounts</li>
+              <li>Restrict access</li>
+              <li>Delete violating material</li>
+            </ul>
+            <p className="mt-4">without prior notice.</p>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">5. Intellectual Property</h2>
+            <p>The App, branding, logos, design, and software remain the property of Solvex Technology IN. Users retain ownership of their original content.</p>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">6. AI Generated Results</h2>
+            <p>AI generated suggestions are provided "as is." We do not guarantee:</p>
+            <ul className="list-disc pl-6">
+              <li>Viral performance</li>
+              <li>Search ranking improvements</li>
+              <li>Monetization approval</li>
+              <li>Revenue increases</li>
+              <li>Subscriber growth</li>
+            </ul>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">7. No YouTube Affiliation</h2>
+            <p>YouTube Viral Toolkit is an independent application. It is not affiliated with, endorsed by, or sponsored by:</p>
+            <ul className="list-disc pl-6">
+              <li><a href="https://www.youtube.com" className="text-red-500 hover:underline">YouTube</a></li>
+              <li><a href="https://www.google.com" className="text-red-500 hover:underline">Google</a></li>
+            </ul>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">8. Account Suspension</h2>
+            <p>We may suspend or terminate accounts for:</p>
+            <ul className="list-disc pl-6">
+              <li>Fraud</li>
+              <li>Abuse</li>
+              <li>Copyright violations</li>
+              <li>Harmful activities</li>
+              <li>Policy violations</li>
+            </ul>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">9. Limitation of Liability</h2>
+            <p>We are not responsible for:</p>
+            <ul className="list-disc pl-6 mb-4">
+              <li>Data loss</li>
+              <li>Revenue loss</li>
+              <li>Subscriber loss</li>
+              <li>Account penalties</li>
+              <li>Platform policy actions by third parties</li>
+            </ul>
+            <p>Use the App at your own risk.</p>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">10. Service Availability</h2>
+            <p>We do not guarantee uninterrupted availability. Features may be modified, removed, or updated without notice.</p>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">11. Governing Law</h2>
+            <p>These Terms shall be governed by the laws of India. Any disputes shall be subject to the jurisdiction of Indian courts.</p>
+          </section>
+
+          <section className="glass-card p-8 rounded-3xl border border-card-border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">12. Contact</h2>
+            <p>Company: Solvex Technology IN</p>
+            <p>Website: <a href="https://solvextechnology.in" className="text-red-500 hover:underline">Solvex Technology</a></p>
           </section>
         </div>
 
