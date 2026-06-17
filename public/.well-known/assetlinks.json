@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.solvextechnology.todoit",
+      "sha256_cert_fingerprints": [
+        "77:81:04:57:9C:9C:29:C7:E5:21:14:D9:DE:84:94:2A:09:23:34:0D:EF:3B:A1:2E:D0:5B:69:29:F8:F3:D0:47"
+      ]
+    }
+  }
+]
