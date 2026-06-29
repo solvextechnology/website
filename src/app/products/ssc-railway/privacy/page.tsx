@@ -29,14 +29,14 @@ export default function AdvancedPrivacyPolicy() {
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">Privacy Policy</h1>
-              <p className="text-foreground/60 text-lg">Effective Date: June 13, 2026 • Solvex Technology</p>
+              <p className="text-foreground/60 text-lg">Effective Date: June 13, 2026 | Solvex Technology</p>
             </div>
           </div>
 
           <div className="prose prose-invert prose-lg prose-blue max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-p:text-foreground/80 prose-li:text-foreground/80">
             
             <p className="lead text-xl text-foreground/90 font-medium mb-8">
-              Solvex Technology ("we," "our," or "us") is committed to protecting your privacy. This comprehensive Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our mobile application, "SSC Railway Exam Guide" (the "Application"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.
+              Solvex Technology ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, retain, and safeguard information when you use the <strong>SSC Railway Exam Guide</strong> mobile application. Please read it carefully before using the app.
             </p>
 
             <div className="flex items-center gap-3 mt-12 mb-6">
@@ -49,17 +49,17 @@ export default function AdvancedPrivacyPolicy() {
             
             <h3 className="text-xl">A. Personal Data</h3>
             <p>
-              Demographic and other personally identifiable information (such as your name and email address) that you voluntarily give to us when choosing to participate in various activities related to the Application, such as creating an account, participating in mock tests, or purchasing premium subscriptions. If you choose to share data about yourself via your profile, online chat, or other interactive areas of the Application, please be advised that all data you disclose in these areas is public and your data will be accessible to anyone who accesses the Application.
+              Information you voluntarily provide, such as name, email address, phone number, profile details, login credentials, support messages, and purchase-related account identifiers. We collect this when you create an account, take mock tests, contact support, or purchase premium services.
             </p>
 
             <h3 className="text-xl">B. Derivative Data & Analytics</h3>
             <p>
-              Information our servers automatically collect when you access the Application, such as your native actions that are integral to the Application, including your mock test scores, time taken per question, chapters visited, and bookmarks created. We use this derivative data strictly to power our AI Analytics engine, providing you with personalized study recommendations and performance insights.
+              Information generated while using the Application, including mock test scores, attempted answers, time taken per question, chapters visited, bookmarks, revision history, device diagnostics, crash reports, and app-performance logs. We use this data to provide analytics, improve stability, and personalize revision suggestions.
             </p>
 
             <h3 className="text-xl">C. Financial Data</h3>
             <p>
-              Financial information, such as data related to your payment method (e.g., valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the Application. We store only very limited, if any, financial information that we collect. Otherwise, all financial information is stored by our payment processor (e.g., Google Play Billing, Razorpay) and you are encouraged to review their privacy policy and contact them directly for responses to your questions.
+              We do not store full card numbers or sensitive payment credentials. Purchases may be processed by Google Play Billing or authorized payment providers. We may receive limited transaction metadata such as product purchased, order status, transaction identifier, currency, and purchase date for account, support, tax, and fraud-prevention purposes.
             </p>
 
             <div className="flex items-center gap-3 mt-12 mb-6">
@@ -77,7 +77,7 @@ export default function AdvancedPrivacyPolicy() {
               <li>Monitor and analyze usage and trends to improve your experience with the Application.</li>
               <li>Notify you of updates to the Application, new mock tests, or upcoming exam dates.</li>
               <li>Prevent fraudulent transactions, monitor against theft, and protect against criminal activity.</li>
-              <li>Serve personalized advertisements (if you are on a free tier).</li>
+              <li>Show ads or measure ad performance where the free version of the app is ad-supported.</li>
             </ul>
 
             <div className="flex items-center gap-3 mt-12 mb-6">
@@ -100,12 +100,12 @@ export default function AdvancedPrivacyPolicy() {
 
             <h3 className="text-xl">C. Third-Party Advertisers</h3>
             <p>
-              We use third-party advertising companies (e.g., <strong>Google AdMob</strong>) to serve ads when you visit the Application. These companies may use information about your visits to the Application and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.
+              We may use third-party advertising services such as <strong>Google AdMob</strong> in free app experiences. These providers may process device identifiers, ad identifiers, coarse location, and interaction signals according to their own policies and your device settings.
             </p>
 
             <h2 className="text-3xl mt-12">4. Data Security and Retention</h2>
             <p>
-              We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse. We will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy.
+              We use administrative, technical, and organizational safeguards to help protect personal information, including access control, secure hosting, backup controls, and least-privilege operational practices. No method of transmission or storage is completely secure, but we work to reduce risk and retain information only for as long as needed for the purposes described in this Policy, legal compliance, fraud prevention, dispute handling, and legitimate business operations.
             </p>
 
             <h2 className="text-3xl mt-12">5. Policy for Children (COPPA Compliance)</h2>
@@ -115,7 +115,7 @@ export default function AdvancedPrivacyPolicy() {
 
             <h2 className="text-3xl mt-12">6. Your Rights (GDPR & CCPA)</h2>
             <p>
-              Depending on your location, you may have the right to request access to the personal data we collect from you, change that information, or delete it in some circumstances. You may review or change the information in your account or terminate your account entirely by visiting our <Link href="/products/ssc-railway/account-deletion" className="text-primary font-bold">Account Deletion Request</Link> page. Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases.
+              Depending on your location, you may have the right to request access to the personal data we collect from you, change that information, or delete it in some circumstances. You may review or change the information in your account or terminate your account entirely by visiting our <Link href="/products/ssc-railway/delete-account" className="text-primary font-bold">Account Deletion Request</Link> page. Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases.
             </p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 mt-16 text-center">

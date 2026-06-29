@@ -28,8 +28,8 @@ export default function AdvancedTermsAndConditions() {
               <FileText className="w-8 h-8 text-secondary" />
             </div>
             <div>
-              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">Terms of Service</h1>
-              <p className="text-foreground/60 text-lg">Effective Date: June 13, 2026 • Solvex Technology</p>
+              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">Terms and Conditions</h1>
+              <p className="text-foreground/60 text-lg">Effective Date: June 13, 2026 | Solvex Technology</p>
             </div>
           </div>
 
@@ -50,10 +50,10 @@ export default function AdvancedTermsAndConditions() {
               <h2 className="m-0 text-3xl">1. Educational Purpose & Disclaimer</h2>
             </div>
             <p>
-              The <strong>SSC Railway Exam Guide</strong> application is an independent educational platform operated by Solvex Technology. We are <strong>strictly not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Staff Selection Commission (SSC), the Railway Recruitment Board (RRB)</strong>, or any government agency.
+              The <strong>SSC Railway Exam Guide</strong> application is an independent educational platform operated by Solvex Technology. We are <strong>not affiliated, associated, authorized, endorsed by, or officially connected with the Staff Selection Commission (SSC), the Railway Recruitment Board (RRB)</strong>, Indian Railways, or any government department.
             </p>
             <p>
-              All mock tests, previous year questions, and study materials are provided for educational and preparation purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, or suitability of the educational content. Your reliance on such information is therefore strictly at your own risk.
+              All mock tests, practice questions, explanations, and study materials are provided for educational and preparation purposes only. Exam notifications, vacancies, eligibility criteria, dates, and official results should always be verified from the relevant government or recruitment-board website.
             </p>
 
             <div className="flex items-center gap-3 mt-12 mb-6">
@@ -61,7 +61,7 @@ export default function AdvancedTermsAndConditions() {
               <h2 className="m-0 text-3xl">2. Intellectual Property Rights</h2>
             </div>
             <p>
-              Other than the content you own, under these Terms, Solvex Technology and/or its licensors own all the intellectual property rights and materials contained in this Application. This includes, but is not limited to, our proprietary AI analytics engine, UI/UX designs, specific test structures, and source code.
+              Other than the content you own, Solvex Technology and/or its licensors own the intellectual property rights in the Application. This includes our app design, software, analytics flows, brand assets, original explanations, curated test structures, and source code.
             </p>
             <p>
               You are granted limited license only for purposes of viewing the material contained on this Application. You are specifically restricted from all of the following:
@@ -69,7 +69,7 @@ export default function AdvancedTermsAndConditions() {
             <ul>
               <li>Publishing any Application material in any other media without explicit permission.</li>
               <li>Selling, sublicensing and/or otherwise commercializing any Application material.</li>
-              <li>Publicly performing and/or showing any Application material (e.g., streaming our premium tests on YouTube without a Creator License).</li>
+              <li>Publicly reproducing paid or restricted Application material without written permission.</li>
               <li>Using this Application to engage in any advertising or marketing without our consent.</li>
               <li>Scraping, data mining, or extracting our question banks using automated scripts or bots.</li>
             </ul>
@@ -79,12 +79,12 @@ export default function AdvancedTermsAndConditions() {
               <h2 className="m-0 text-3xl">3. Premium Subscriptions & Billing</h2>
             </div>
             <p>
-              Certain sections of the Application, such as Advanced Mock Tests, Live Leaderboards, and Ad-Free experiences, are billed on a subscription basis ("Premium Services").
+              Certain sections of the Application, such as advanced mock tests, expanded analytics, leaderboards, and ad-free experiences, may be offered as paid or subscription-based services ("Premium Services").
             </p>
             <ul>
               <li><strong>Billing Cycle:</strong> You will be billed in advance on a recurring and periodic basis (such as monthly or annually), depending on the type of subscription plan you select when purchasing.</li>
               <li><strong>Auto-Renewal:</strong> Unless you cancel your subscription before the end of the applicable billing cycle, your subscription will automatically renew under the exact same conditions.</li>
-              <li><strong>Cancellations & Refunds:</strong> You may cancel your Premium subscription renewal either through your online account management page or by contacting our customer support team. Subscriptions are processed via Google Play Billing or our authorized payment gateways, and refunds are handled according to the respective platform's policies.</li>
+              <li><strong>Cancellations & Refunds:</strong> You may cancel your Premium subscription through the platform where you purchased it, such as Google Play Billing, or through account settings where available. Refunds are handled according to the payment platform's applicable policies.</li>
             </ul>
 
             <h2 className="text-3xl mt-12">4. User Accounts & Data Integrity</h2>
@@ -102,7 +102,7 @@ export default function AdvancedTermsAndConditions() {
 
             <h2 className="text-3xl mt-12">6. Governing Law & Jurisdiction</h2>
             <p>
-              These Terms will be governed by and interpreted in accordance with the laws of the jurisdiction in which Solvex Technology is registered, and you submit to the non-exclusive jurisdiction of the state and federal courts located in us for the resolution of any disputes.
+              These Terms are governed by the laws applicable to Solvex Technology's place of operation, without regard to conflict-of-law principles. Courts and authorities with proper jurisdiction over Solvex Technology and the relevant transaction will handle disputes that cannot be resolved informally.
             </p>
 
             <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-8 mt-16 text-center">

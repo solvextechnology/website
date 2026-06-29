@@ -43,7 +43,7 @@ export default function AdvancedAccountDeletionPage() {
               <ul className="grid sm:grid-cols-2 gap-3 text-sm text-foreground/70">
                 <li className="flex items-center gap-2"><Trash2 className="w-4 h-4 text-red-500/70"/> Loss of all mock test history & analytics.</li>
                 <li className="flex items-center gap-2"><Trash2 className="w-4 h-4 text-red-500/70"/> Deletion of all saved bookmarks & notes.</li>
-                <li className="flex items-center gap-2"><Trash2 className="w-4 h-4 text-red-500/70"/> Forfeiture of active Premium Subscriptions.</li>
+                <li className="flex items-center gap-2"><Trash2 className="w-4 h-4 text-red-500/70"/> Loss of in-app premium access linked to this account.</li>
                 <li className="flex items-center gap-2"><Trash2 className="w-4 h-4 text-red-500/70"/> Erasure of profile and leaderboard ranking.</li>
               </ul>
             </div>
@@ -104,7 +104,7 @@ export default function AdvancedAccountDeletionPage() {
             </p>
             <ul>
               <li><strong>30-Day Erasure Window:</strong> Complete erasure of your data from our active databases and backup servers (Supabase) may take up to 30 days from the date of the request.</li>
-              <li><strong>Financial Records:</strong> If you have purchased a Premium Subscription, strictly necessary transactional records (e.g., invoices, transaction IDs) may be retained longer to comply with national tax, audit, and legal obligations. This retained data is completely anonymized and detached from your user profile.</li>
+              <li><strong>Financial Records:</strong> If you purchased a Premium service, strictly necessary transaction records such as invoices, order IDs, taxes, refunds, and fraud-prevention logs may be retained longer where required by law, accounting rules, platform policies, or dispute-resolution needs.</li>
               <li><strong>Third-Party Analytics:</strong> Anonymized, aggregated performance metrics (which cannot be traced back to you) may remain in our dataset to improve our AI algorithms.</li>
             </ul>
 

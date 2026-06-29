@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, ShieldCheck, Gamepad2, FileText, Trash2, Download } from "lucide-react";
+import { ArrowLeft, BookOpen, ShieldCheck, FileText, Trash2, Download, BarChart3, Brain, Clock, Languages, CheckCircle2, Target, Smartphone, Sparkles } from "lucide-react";
 
 export default function SSCRailwayProductPage() {
   return (
@@ -31,7 +31,7 @@ export default function SSCRailwayProductPage() {
             className="flex-1 space-y-8"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/20 text-sm text-primary font-bold uppercase tracking-wider">
-              <BookOpen className="w-4 h-4" /> Educational App
+              <BookOpen className="w-4 h-4" /> SSC + Railway Preparation App
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
@@ -40,13 +40,29 @@ export default function SSCRailwayProductPage() {
             </h1>
             
             <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
-              India's premium and most trusted platform for cracking SSC and Railway competitive exams. Experience real-time mock tests, dynamic analytics, and 1000+ premium bilingual questions right in your pocket.
+              A polished exam-preparation app built for serious SSC and Railway aspirants. Practice CBT-style mock tests, revise chapter-wise questions, track weak areas, and keep your learning data under clear privacy controls.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link href="#" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/95 transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-1">
-                <Download className="w-5 h-5" /> Download App
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/95 transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-1">
+                <Download className="w-5 h-5" /> Request App Access
               </Link>
+              <Link href="#compliance" className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-card-border rounded-xl font-bold hover:border-primary/50 hover:text-primary transition-all">
+                <ShieldCheck className="w-5 h-5" /> View Legal Pages
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-3 gap-4 pt-4 max-w-xl">
+              {[
+                ["CBT", "Mock interface"],
+                ["2 Lang", "Hindi + English"],
+                ["24/7", "Self practice"],
+              ].map(([value, label]) => (
+                <div key={value} className="rounded-2xl border border-card-border bg-card/40 p-4">
+                  <div className="text-2xl font-extrabold text-primary">{value}</div>
+                  <div className="text-xs text-foreground/60">{label}</div>
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -73,19 +89,19 @@ export default function SSCRailwayProductPage() {
         <div className="grid md:grid-cols-3 gap-8 mb-32">
           {[
             {
-              title: "Live Mock Tests",
-              desc: "Simulate the exact CBT interface with real-time timers and instant ranking analytics.",
-              icon: <Gamepad2 className="w-8 h-8 text-primary" />
+              title: "CBT Mock Tests",
+              desc: "Timed test flows designed around the feel of computer-based competitive exams, with instant review after submission.",
+              icon: <Clock className="w-8 h-8 text-primary" />
             },
             {
               title: "Multilingual Q-Bank",
-              desc: "Practice in English, Hindi, and Tamil with detailed explanations for every single question.",
-              icon: <BookOpen className="w-8 h-8 text-secondary" />
+              desc: "Practice important SSC and Railway topics in Hindi and English with clear explanations for revision.",
+              icon: <Languages className="w-8 h-8 text-secondary" />
             },
             {
-              title: "AI Progress Tracking",
-              desc: "Identify your weak chapters instantly and receive targeted subject-level revisions.",
-              icon: <ShieldCheck className="w-8 h-8 text-emerald-500" />
+              title: "Smart Progress Tracking",
+              desc: "Understand accuracy, time spent, skipped questions, and weak chapters so revision becomes measurable.",
+              icon: <BarChart3 className="w-8 h-8 text-emerald-500" />
             }
           ].map((feat, i) => (
             <motion.div 
@@ -105,17 +121,62 @@ export default function SSCRailwayProductPage() {
           ))}
         </div>
 
+        {/* Learning Experience */}
+        <div className="mb-32">
+          <div className="max-w-3xl mb-12">
+            <div className="inline-flex items-center gap-2 text-primary font-bold mb-4">
+              <Sparkles className="w-5 h-5" /> Built for daily preparation
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-5">Everything an aspirant needs before the exam day.</h2>
+            <p className="text-lg text-foreground/65 leading-relaxed">
+              The app is structured for repeated practice: quick quizzes for revision, full-length mocks for stamina, and analytics that make the next study session obvious.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Exam-wise learning paths",
+                desc: "Organize practice for SSC, RRB NTPC, Group D, ALP, and general aptitude preparation without mixing unrelated material.",
+                icon: <Target className="w-6 h-6 text-primary" />,
+              },
+              {
+                title: "Question review and bookmarks",
+                desc: "Save difficult questions, revisit attempted answers, and build a personal revision queue before important dates.",
+                icon: <CheckCircle2 className="w-6 h-6 text-emerald-500" />,
+              },
+              {
+                title: "Adaptive insights",
+                desc: "Performance views highlight weak subjects, slow topics, and accuracy patterns so students can stop guessing what to study.",
+                icon: <Brain className="w-6 h-6 text-secondary" />,
+              },
+              {
+                title: "Mobile-first experience",
+                desc: "Lightweight screens, readable typography, and fast navigation keep practice comfortable on budget Android phones.",
+                icon: <Smartphone className="w-6 h-6 text-accent" />,
+              },
+            ].map((item) => (
+              <div key={item.title} className="glass-card border border-card-border rounded-2xl p-7">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">{item.icon}</div>
+                <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
+                <p className="text-foreground/65 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Legal & Compliance Section */}
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="border-t border-card-border pt-20"
+          id="compliance"
+          className="border-t border-card-border pt-20 scroll-mt-28"
         >
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl font-extrabold mb-4">Legal & Compliance</h2>
             <p className="text-foreground/60">
-              We strictly adhere to Google Play Store policies to ensure complete transparency, data protection, and user safety.
+              Complete policy pages for users, app stores, and compliance reviewers. These pages explain data use, app rules, and account deletion in plain language.
             </p>
           </div>
 
@@ -132,7 +193,7 @@ export default function SSCRailwayProductPage() {
               <p className="text-sm text-foreground/60">Rules and guidelines for using the app</p>
             </Link>
 
-            <Link href="/products/ssc-railway/account-deletion" className="group glass-card p-6 rounded-2xl border border-card-border hover:border-red-500/40 flex flex-col items-center text-center transition-all">
+            <Link href="/products/ssc-railway/delete-account" className="group glass-card p-6 rounded-2xl border border-card-border hover:border-red-500/40 flex flex-col items-center text-center transition-all">
               <Trash2 className="w-10 h-10 text-red-500 mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-lg font-bold mb-2 text-red-400">Account Deletion</h3>
               <p className="text-sm text-foreground/60">Instructions to permanently remove your data</p>

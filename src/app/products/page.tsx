@@ -59,15 +59,16 @@ const products = [
   },
   {
     title: "SSC Railway Exam Guide",
-    category: "EdTech & Preparation",
-    desc: "The ultimate preparation platform for SSC and Railway aspirants. Features 1000+ bilingual questions, mock tests, and AI-driven performance analytics.",
+    category: "Exam Prep & Career Learning",
+    desc: "A focused mobile learning app for SSC and Railway aspirants with exam-style mock tests, bilingual practice sets, chapter-wise revision, performance analytics, and transparent legal/data controls.",
     link: "/products/ssc-railway",
     image: "/images/ssc-logo.png",
-    status: "Active Release",
+    status: "Student Ready",
     features: [
-      { name: "Live Mock Tests", icon: <Gamepad2 className="w-4 h-4 text-secondary" /> },
-      { name: "Multilingual", icon: <BookOpen className="w-4 h-4 text-yellow-500" /> },
-      { name: "Performance AI", icon: <Rocket className="w-4 h-4 text-primary" /> }
+      { name: "CBT Mock Tests", icon: <Gamepad2 className="w-4 h-4 text-secondary" /> },
+      { name: "Hindi + English", icon: <BookOpen className="w-4 h-4 text-yellow-500" /> },
+      { name: "Smart Analytics", icon: <Rocket className="w-4 h-4 text-primary" /> },
+      { name: "Privacy Controls", icon: <ShieldCheck className="w-4 h-4 text-emerald-500" /> }
     ],
     statusStyle: "border-blue-500/50 text-blue-400 bg-blue-500/10",
     statusDot: "bg-blue-400 animate-pulse",
