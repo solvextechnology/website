@@ -84,7 +84,7 @@ export default function AdvancedAccountDeletionPage() {
               </p>
               
               <div className="bg-background p-6 rounded-xl border border-card-border font-mono text-sm text-foreground/80 leading-relaxed">
-                <span className="text-foreground/50">To:</span> privacy@solvextechnology.com<br/>
+                <span className="text-foreground/50">To:</span> support@solvextechnology.in<br/>
                 <span className="text-foreground/50">Subject:</span> GDPR/CCPA Account Erasure Request - SSC Railway App<br/><br/>
                 <span className="text-foreground/50">Body:</span><br/>
                 To the Solvex Technology Privacy Team,<br/><br/>

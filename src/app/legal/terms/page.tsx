@@ -86,7 +86,7 @@ export default function Terms() {
 
           <div className="pt-6 border-t border-card-border">
             <p className="text-foreground/70">
-              If you have any questions about these Terms, please contact us at <a href="mailto:legal@solvextechnology.in" className="text-primary hover:underline">legal@solvextechnology.in</a>.
+              If you have any questions about these Terms, please contact us at <a href="mailto:support@solvextechnology.in" className="text-primary hover:underline">support@solvextechnology.in</a>.
             </p>
           </div>
         </div>

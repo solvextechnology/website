@@ -109,7 +109,7 @@ export default function AdvancedTermsAndConditions() {
               <h2 className="m-0 text-2xl mb-4">Questions About Our Terms?</h2>
               <p className="mb-0">
                 Contact our legal compliance team at: <br/>
-                <strong className="text-secondary mt-2 block text-xl">legal@solvextechnology.com</strong>
+                <strong className="text-secondary mt-2 block text-xl">support@solvextechnology.in</strong>
               </p>
             </div>
 

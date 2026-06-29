@@ -123,7 +123,7 @@ export default function AdvancedPrivacyPolicy() {
               <h2 className="m-0 text-2xl mb-4">Contact Us</h2>
               <p className="mb-0">
                 If you have questions or comments about this Privacy Policy, please contact us at: <br/>
-                <strong className="text-primary mt-2 block text-xl">privacy@solvextechnology.com</strong>
+                <strong className="text-primary mt-2 block text-xl">support@solvextechnology.in</strong>
               </p>
             </div>
 
